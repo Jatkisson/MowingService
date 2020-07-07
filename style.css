@@ -1,0 +1,314 @@
+body {
+    margin: 0;
+    background-color: #5C905F
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    grid-template-rows: 200px 1fr;
+    grid-row-gap: 0em;
+    grid-template-columns: 10% 10% 20% 20% 20% 10% 10%;
+    grid-template-rows: 150px auto auto auto auto auto auto auto 100px;
+}
+
+nav {
+    grid-row: 2/8;
+    grid-column: 1/3;
+    margin: 0;
+    background-color: #002101;
+    padding: 10px 0px 10px 10px;
+    border-right: 3px solid black;
+    border-bottom: 1px solid black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav li {
+    margin-left: 15%;
+    list-style-type: none;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+
+nav ul {
+    padding-left: 5px;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8BAF8C;
+}
+
+header {
+    grid-row: 1/2;
+    grid-column: 1/8;
+    margin: 0;
+    background-color: #005104;
+    background-image: url(images/colorlogo.jpg);
+    background-position: 30%;
+    background-repeat: no-repeat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 200%;
+    padding-left: 5%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 3px solid black;
+}
+
+header h1 {
+    margin: 900px;
+}
+
+main {
+    grid-row: 2/8;
+    grid-column: 3/6;
+    background-color: #5C905F;
+    text-align: center;
+    padding: 30px;
+    min-height: 590px;
+}
+
+main h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 4em;
+}
+
+main p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+}
+
+main img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#accordion p {
+    font-size: 1.5em;
+}
+
+#accordion img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#accordion img:hover { 
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+table {
+    width: 80%;
+    margin: 25px auto;
+}
+
+table th, table td {
+    border-bottom: 2px dashed black;
+    border-right: 1px dashed black;
+}
+
+table th {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+table td {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.85em;
+    padding: 20px;
+}
+
+aside {
+    grid-row: 2/8;
+    grid-column: 6/8;
+    background-color: #002101;
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.8em;
+    padding: 15px;
+    border-left: 3px solid black;
+    border-bottom: 1px solid black;
+}
+
+aside h2 {
+    margin-top: 30px;
+}
+
+aside p {
+    margin-bottom: 60px;
+}
+
+form {
+    background-color: #002101;
+    padding: 20px;
+}
+
+form h2, form p {
+    color: whitesmoke;
+}
+
+label {
+    display: block;
+    /* float: left; */
+    text-align: center;
+    width: 8em;
+    /* padding: 1em; */
+    margin: 10px auto 0 auto;
+    color: whitesmoke;
+    font-weight: 300;
+}
+
+input {
+    margin-right: 0;
+}
+
+input, textarea {
+    display: block;
+    /* margin-bottom: 1em; */
+}
+
+#reviewName {
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#reviewComment {
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#name {
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#date {
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#email {
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#address {
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#requests {
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#submit {
+    margin: 1em auto;
+}
+
+#monthlySpecials {
+    width: 60%;
+    margin: 10px auto;
+}
+
+fieldset {
+    color: whitesmoke;
+}
+
+button {
+    margin: 10px;
+}
+
+#reset {
+    display: inline;
+}
+
+.review {
+    border: 2px solid black;
+    padding-bottom: 5%;
+    margin: 40px;
+}
+
+main i {
+    font-size: 2em;
+}
+
+blockquote {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer {
+    grid-row-gap: 0em;
+    grid-row: 8/10;
+    grid-column: 1/8;
+    text-align: center;
+    background-color: #002101;
+    color: whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer a {
+    color: whitesmoke;
+}
+
+.bookAService {
+    background-color: #004104a9;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 7px;
+    border: 1px solid black;
+    width: 200px;
+    height: 40px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    -webkit-transition: width 400ms, height 1s; /* For Safari 3.1 to 6.0 */
+    transition: width 400ms, height 1s;
+}
+
+.bookAService:hover {
+    width: 300px;
+    height: 50px;
+}
+
+.bookAService a {
+    color: whitesmoke;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+
+.error {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: .90em;
+    color: #FF0000;
+    margin-left: 1em;
+}
+
+@media only screen and (max-width: 1024px) {
+    #sprinkler {
+        width: 100%;
+        height: 252px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #sprinkler {
+        width: 100%;
+        height: 126px;
+    }
+}

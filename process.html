@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Lawn Care by James Atkisson</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="jquery-ui.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div id="grid">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="specials.html">Monthly Specials</a></li>
+                <li><a href="equipment.html">My Equipment</a></li>
+                <li><a href="process.html">Booking Process</a></li>
+                <li><a href="booking.html">Book a Service</a></li>
+                <li><a href="news.html">Recent News</a></li>
+                <li><a href="leaveReview.html">Leave a Review</a></li>
+                <li><a href="aboutMe.html">About Me</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Lawn Care by James Atkisson</h1>
+        </header>
+        <main>
+                <div id="accordion">
+	            <h3>Book a Service</h3>
+	                <div><p>Booking a service is easy. Just provide your information in the "Book a Service" page. The information will be sent to me and recieved right away.</p></div>
+	            <h3>Confirm Service</h3>
+	                <div>
+                        <p>You will receive an email response within 24 hours. If the service can't be done on the exact day you requested, then I will let you know when I will have time.</p>
+                        <p>It is not typicallly too far away from the intial request.</p>
+                    </div>
+	            <h3>Receive Invoice by Email</h3>
+                    <div>
+                        <p>Here is a sample of what an invoice from me will look like.</p>
+                        <a target="_blank" href="images/sample.PNG"><img src="images/sample.PNG" width="567px" height="362px" alt="Invoice Sample"></a>
+                    </div>
+                <h3>Pay Invoice</h3>
+	                <div><p>Invoices can be paid by bank transfer or credit/debit card. All payments are handled by Intuit so you won't have to worry about the security.</p></div>
+                </div>
+        </main>
+        <aside>
+                <h2 style="text-decoration: underline; font-size: 2em; text-align: center;">Recent News</h2>
+                <h2>
+                        <script>
+                            document.write(title[0]);
+                        </script>
+                    </h2>
+                    <p>
+                        <script>
+                            document.write(content[0]);
+                        </script>
+                    </p>
+                    <h2>
+                            <script>
+                                document.write(title[1]);
+                            </script>
+                        </h2>
+                        <p>
+                            <script>
+                                document.write(content[1]);
+                            </script>
+                        </p>
+        </aside>
+    
+        <footer>
+            <p>Copyright &copy; 2018 James Atkisson</p>
+            &nbsp
+            <p>E-mail me at <a href="mailto:atkisson.james@gmail.com">atkisson.james@gmail.com</a></p>
+            &nbsp
+            <p>This web page was last modified on </p>
+            <script>
+            document.write(document.lastModified);
+            </script>
+        </footer>
+    </div>
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery-ui.js"></script>
+    <script>
+        $( "#accordion" ).accordion();
+    </script>
+</body>
+</html>
